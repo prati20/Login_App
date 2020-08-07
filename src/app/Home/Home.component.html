@@ -1,0 +1,47 @@
+<h1>Home</h1>
+<mat-card class="fruit-card orange">
+    <mat-card-header>
+        <div mat-card-avatar class="fruit-header-image"></div>
+        <mat-card-title>Orange</mat-card-title>
+        <mat-card-subtitle>Navel</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <h1>{{totalOrange}} left</h1>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button class="add" (click)="addItem('orange')">Add</button>
+        <button mat-button class="remove" (click)="removeItem('orange')">Remove</button>
+    </mat-card-actions>
+</mat-card>
+<mat-card class="fruit-card apple">
+    <mat-card-header>
+        <div mat-card-avatar class="fruit-header-image"></div>
+        <mat-card-title>Apple</mat-card-title>
+        <mat-card-subtitle>Gala</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <h1>{{totalApple}} left</h1>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button class="add" (click)="addItem('apple')">Add</button>
+        <button mat-button class="remove" (click)="removeItem('apple')">Remove</button>
+    </mat-card-actions>
+</mat-card>
+<mat-card class="fruit-card grapes">
+    <mat-card-header>
+        <div mat-card-avatar class="fruit-header-image"></div>
+        <mat-card-title>Grapes</mat-card-title>
+        <mat-card-subtitle>Green</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <h1>{{totalGrapes}} left</h1>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button class="add" (click)="addItem('grapes')">Add</button>
+        <button mat-button class="remove" (click)="removeItem('grapes')">Remove</button>
+    </mat-card-actions>
+</mat-card>
+
+<div class="shoppingCart">
+    <div class="item {{item}}" *ngFor="let item of shoppingCart.slice().reverse()">{{item}}</div>
+</div>

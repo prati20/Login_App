@@ -1,0 +1,44 @@
+.fruit-card {
+    max-width: 400px;
+    float: left;
+    padding: 50px;
+    margin: 50px;
+}
+
+.fruit-card.orange, .item.orange {
+    background: orange;
+}
+.shoppingCart {
+    float: left;
+    width: 200px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    
+}
+.item {
+    color: #FFF;
+}
+
+.fruit-card.apple, .item.apple {
+    background: green;
+}
+
+.fruit-card.grapes, .item.grapes {
+    background: purple;
+}
+
+.orange .fruit-header-image {
+    background-image: url('http://rbemis.com/orange/orange.jpg');
+    background-size: cover;
+}
+
+.apple .fruit-header-image {
+    background-image: url('https://previews.123rf.com/images/mikailain/mikailain1809/mikailain180900250/109061263-green-apple-cartoon.jpg');
+    background-size: cover;
+}
+
+.grapes .fruit-header-image {
+    background-size: cover;
+    background-image: url('https://previews.123rf.com/images/1r2f3/1r2f31508/1r2f3150800098/44361565-grape-fruit.jpg');
+}
